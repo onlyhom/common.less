@@ -1,1 +1,47 @@
+h1, h2, h3, ul, ol, p, .row-fix{
+  margin: 0;
+}
 
+h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6, .container{
+    font: 13px/1.5 "Microsoft YaHei", Helvetica, STHeiTi,"Helvetica Neue","微软雅黑",SimSun,sans-serif;
+}
+body{
+    position: relative;
+    font: 13px/1.5 "Microsoft YaHei", Helvetica, STHeiTi,"Helvetica Neue","微软雅黑",SimSun,sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: #666;
+    &:hover,&:focus{
+        color: @color;
+        text-decoration: none;
+    }
+}
+
+.breadcrumb{
+    background: transparent;
+    li{
+        color: #999;
+    }
+    a{
+        cursor: pointer;
+        color:@color;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.pagination > li > a, .pagination > li > span{
+    color:@color;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus{
+    color:@color;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    background-color: @color;
+        border-color: @color;
+}
